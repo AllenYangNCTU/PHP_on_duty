@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        color: black;
+    }
+
+    .main {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        border: 5px solid black;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .row:nth-child(odd) {
+        background-color: #888;
+    }
+
+    .row:nth-child(even) {
+        background-color: #CCC;
+    }
+
+    .col {
+        width: calc(100% / 3);
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .date {
+        width: calc(100% / 3);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <p>PHP資料庫網頁設計班值日生班表</p>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="date">5/25</div>
+            <div class="col">邱宇君</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">5/26</div>
+            <div class="col">吳家駿</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">5/27</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">5/30</div>
+            <div class="col">林健文</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">5/31</div>
+            <div class="col">蔡經偉</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">6/1</div>
+            <div class="col">柯又銘</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">6/2</div>
+            <div class="col">江雨彤</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">6/6</div>
+            <div class="col">李政育</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">6/7</div>
+            <div class="col">江翊帆</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">6/8</div>
+            <div class="col">陳善妤</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">6/9</div>
+            <div class="col">林旻汎</div>
+            <div class="col">吳家駿</div>
+        </div>
+        <div class="row">
+            <div class="date">6/10</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">林奇樺</div>
+
+        </div>
+        <div class="row">
+            <div class="date">6/13</div>
+            <div class="col">趙妅翎</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">6/14</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">6/15</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">楊賀傑</div>
+        </div>
+        <div class="row">
+            <div class="date">6/16</div>
+            <div class="col">林奇樺</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">6/17</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">柯又銘</div>
+        </div>
+        <div class="row">
+            <div class="date">6/20</div>
+            <div class="col">劉姿君</div>
+            <div class="col">簡翊甄</div>
+        </div>
+        <div class="row">
+            <div class="date">6/21</div>
+            <div class="col">李胤華</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">6/22</div>
+            <div class="col">吳家駿</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">6/23</div>
+            <div class="col">董韋逸</div>
+            <div class="col">蔡經偉</div>
+        </div>
+        <div class="row">
+            <div class="date">6/24</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">6/27</div>
+            <div class="col">林旻汎</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">6/28</div>
+            <div class="col">李政育</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">6/29</div>
+            <div class="col">郭芳妤</div>
+            <div class="col">趙妅翎</div>
+        </div>
+        <div class="row">
+            <div class="date">6/30</div>
+            <div class="col">董韋逸</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">7/1</div>
+            <div class="col">劉姿君</div>
+            <div class="col">趙妅翎</div>
+        </div>
+        <div class="row">
+            <div class="date">7/4</div>
+            <div class="col">江雨彤</div>
+            <div class="col">林奇樺</div>
+        </div>
+        <div class="row">
+            <div class="date">7/5</div>
+            <div class="col">李胤華</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">7/6</div>
+            <div class="col">李政育</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">7/7</div>
+            <div class="col">吳家駿</div>
+            <div class="col">蔡經偉</div>
+        </div>
+        <div class="row">
+            <div class="date">7/8</div>
+            <div class="col">林旻汎</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">7/11</div>
+            <div class="col">柯又銘</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">7/12</div>
+            <div class="col">郭芳妤</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">7/13</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">簡奕姍</div>
+        </div>
+        <div class="row">
+            <div class="date">7/14</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">7/15</div>
+            <div class="col">陳善妤</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">7/18</div>
+            <div class="col">江雨彤</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">7/19</div>
+            <div class="col">吳家駿</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">7/20</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">7/21</div>
+            <div class="col">柯又銘</div>
+            <div class="col">蔡經偉</div>
+        </div>
+        <div class="row">
+            <div class="date">7/22</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">吳俊儀</div>
+        </div>
+        <div class="row">
+            <div class="date">7/25</div>
+            <div class="col">李政育</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">7/26</div>
+            <div class="col">黃莉婷</div>
+            <div class="col">林奇樺</div>
+        </div>
+        <div class="row">
+            <div class="date">7/27</div>
+            <div class="col">趙妅翎</div>
+            <div class="col">林旻汎</div>
+        </div>
+        <div class="row">
+            <div class="date">7/28</div>
+            <div class="col">劉姿君</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">7/29</div>
+            <div class="col">邱宇君</div>
+            <div class="col">林旻汎</div>
+        </div>
+        <div class="row">
+            <div class="date">8/1</div>
+            <div class="col">蔡經偉</div>
+            <div class="col">劉姿君</div>
+        </div>
+        <div class="row">
+            <div class="date">8/2</div>
+            <div class="col">林奇樺</div>
+            <div class="col">吳俊儀</div>
+        </div>
+        <div class="row">
+            <div class="date">8/3</div>
+            <div class="col">李政育</div>
+            <div class="col">簡奕姍</div>
+        </div>
+        <div class="row">
+            <div class="date">8/4</div>
+            <div class="col">趙妅翎</div>
+            <div class="col">簡翊甄</div>
+        </div>
+        <div class="row">
+            <div class="date">8/5</div>
+            <div class="col">江翊帆</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">8/8</div>
+            <div class="col">柯又銘</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">8/9</div>
+            <div class="col">吳家駿</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">8/10</div>
+            <div class="col">郭芳妤</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">8/11</div>
+            <div class="col">邱妤潔</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">8/12</div>
+            <div class="col">蔡經偉</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">8/15</div>
+            <div class="col">柯又銘</div>
+            <div class="col">林奇樺</div>
+        </div>
+        <div class="row">
+            <div class="date">8/16</div>
+            <div class="col">李政育</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">8/17</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">8/18</div>
+            <div class="col">吳家駿</div>
+            <div class="col">趙妅翎</div>
+        </div>
+        <div class="row">
+            <div class="date">8/19</div>
+            <div class="col">邱宇君</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">8/22</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">8/23</div>
+            <div class="col">林旻汎</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">8/24</div>
+            <div class="col">邱妤潔</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">8/25</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">劉姿君</div>
+        </div>
+        <div class="row">
+            <div class="date">8/26</div>
+            <div class="col">林健文</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">8/29</div>
+            <div class="col">邱妤潔</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">8/30</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">8/31</div>
+            <div class="col">郭芳妤</div>
+            <div class="col">劉姿君</div>
+        </div>
+        <div class="row">
+            <div class="date">9/1</div>
+            <div class="col">林健文</div>
+            <div class="col">林奇樺</div>
+        </div>
+        <div class="row">
+            <div class="date">9/2</div>
+            <div class="col">林旻汎</div>
+            <div class="col">簡奕姍</div>
+        </div>
+        <div class="row">
+            <div class="date">9/5</div>
+            <div class="col">陳善妤</div>
+            <div class="col">柯又銘</div>
+        </div>
+        <div class="row">
+            <div class="date">9/6</div>
+            <div class="col">黃莉婷</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">9/7</div>
+            <div class="col">吳家駿</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">9/8</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">趙妅翎</div>
+        </div>
+        <div class="row">
+            <div class="date">9/12</div>
+            <div class="col">林奇樺</div>
+            <div class="col">李政育</div>
+        </div>
+        <div class="row">
+            <div class="date">9/13</div>
+            <div class="col">邱宇君</div>
+            <div class="col">蔡經偉</div>
+        </div>
+        <div class="row">
+            <div class="date">9/14</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">9/15</div>
+            <div class="col">李政育</div>
+            <div class="col">陳善妤</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">吳俊儀</div>
+            <div class="col">簡翊甄</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">李胤華</div>
+            <div class="col">劉姿君</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">吳家駿</div>
+            <div class="col">趙妅翎</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">林健文</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">邱妤潔</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">江雨彤</div>
+            <div class="col">林旻汎</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">蔡經偉</div>
+            <div class="col">江翊帆</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">董韋逸</div>
+            <div class="col">柯又銘</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">趙妅翎</div>
+            <div class="col">吳俊儀</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">林旻汎</div>
+            <div class="col">李政育</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">陳善妤</div>
+            <div class="col">江雨彤</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">江翊帆</div>
+            <div class="col">邱妤潔</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">黃莉婷</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">柯又銘</div>
+            <div class="col">蔡經偉</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">董韋逸</div>
+            <div class="col">簡翊甄</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">吳家駿</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">劉姿君</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">簡奕姍</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">吳家駿</div>
+            <div class="col">林奇樺</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">邱妤潔</div>
+            <div class="col">李胤華</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">劉姿君</div>
+            <div class="col">簡奕姍</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">江雨彤</div>
+            <div class="col">柯又銘</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">陳善妤</div>
+            <div class="col">郭芳妤</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">李政育</div>
+            <div class="col">邱宇君</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">林奇樺</div>
+            <div class="col">林健文</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">蔡經偉</div>
+            <div class="col">吳俊儀</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">簡翊甄</div>
+            <div class="col">黃莉婷</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">江翊帆</div>
+            <div class="col">董韋逸</div>
+        </div>
+        <div class="row">
+            <div class="date">候補</div>
+            <div class="col">趙妅翎</div>
+            <div class="col">林旻汎</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
