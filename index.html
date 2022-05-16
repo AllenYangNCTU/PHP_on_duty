@@ -31,6 +31,7 @@
         animation-duration: 7s;
         animation-iteration-count: 1;
         animation-direction: alternate;
+        /* background-color: red; */
     }
     @keyframes top {
         0% {
@@ -53,6 +54,9 @@
             color: #F7DAAD;
             font-weight: bold;
         }
+        .menu p{
+        font-size: 25px;
+    }
     }
 
     @media (min-width: 768px) and (max-width: 979px) {
@@ -62,6 +66,9 @@
             color: #F7DAAD;
             font-weight: bold;
         }
+        .menu p{
+        font-size: 40px;
+    }
     }
 
     @media (min-width: 980px) and (max-width: 1199px) {
@@ -71,6 +78,9 @@
             color: #F7DAAD;
             font-weight: bold;
         }
+        .menu p{
+        font-size: 45px;
+    }
     }
 
     @media (min-width: 1200px) {
@@ -80,6 +90,9 @@
             color: #F7DAAD;
             font-weight: bold;
         }
+        .menu p{
+        font-size: 55px;
+    }
     }
 
 
@@ -119,10 +132,6 @@
         animation-iteration-count: 1;
         animation-direction: alternate;
     }
-
-    /* .row:nth-child(odd):active{
-        
-    } */
 
     .row:nth-child(odd):hover {
         /* background-color: #888; */
@@ -226,11 +235,43 @@
         color: #00c2cb;
         text-decoration: none;
     }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: #fff; */
+        margin-top: 30px;
+        
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    .menu p:hover{
+        background-color: #fff;
+    }
+   
 </style>
 
 <body>
     <div class="top">
         <p>PHP資料庫網頁設計班值日生班表</p>
+    </div>
+    <div class="menu">
+        <div>
+            <a href="#"><p>主頁</p></a>
+        </div>
+        <div>
+            <a href="#"><p>成員介紹</p></a>
+        </div>
+        <div>
+            <a href="#"><p>值日生班表</p></a>
+        </div>
+        <div>
+            <a href="#"><p>吃飯飯</p></a>
+        </div>
+        <div>
+            <a href="#"><p>劉語錄</p></a>
+        </div>
     </div>
     <div class="main">
         <div class="row">
